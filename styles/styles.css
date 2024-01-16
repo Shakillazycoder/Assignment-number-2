@@ -73,7 +73,7 @@ nav ul li .home {
 /* banner related style here */
 .banner {
   text-align: center;
-  width: 1170px;
+  width: 80%;
   height: 300px;
   flex-shrink: 0;
   border-radius: 16px;
@@ -83,7 +83,9 @@ nav ul li .home {
       rgba(19, 19, 24, 0) 100%
     ),
     url("../Images/Group13.png");
+    background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   margin: 0px 165px;
   padding-top: 106px;
 }
@@ -123,8 +125,10 @@ nav ul li .home {
 /* Tour related style */
 .tour-container {
   display: flex;
-  margin: 100px 135px;
-  gap: 75px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 205px;
+  gap: 60px;
 }
 .tour-title {
   color: #131318;
@@ -237,18 +241,18 @@ nav ul li .home {
     text-align: center;
     font-weight: 400; 
     width: 643px;
-    padding: 10px 450px;
+    padding: 10px 620px;
     margin-bottom: 48px;
 }
 .hotels{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0px 135px;
+    margin: 0px 205px;
     gap: 24px 24px;
 }
 .Handpicked-Hotels, .Guarantee{
-    width: 573px;
+    width: 673px;
     height: 284px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
@@ -257,7 +261,7 @@ nav ul li .home {
     padding-top: 32px;    
 }
 .Service{
-    width: 573px;
+    width: 673px;
     height: 284px;
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
@@ -266,13 +270,14 @@ nav ul li .home {
     padding-top: 32px;
 }
 .Guarantee{
-    margin: 24px 435px;
+    margin: 24px 535px;
 }
 /* perfect place */
 .perfect-place{
     display: flex;
-    gap: 200px;
-    margin: 100px 135px;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 100px 205px;
 }
 .place-title{
     color: #131318;
@@ -296,8 +301,9 @@ nav ul li .home {
 /* newsletter */
 .news-section{
     display: flex;
-    margin: 100px 135px;
-    gap: 200px;
+    justify-content: space-between;
+    margin: 100px 205px;
+    gap: 60px;
 }
 .newsletter{
     width: 474px;
@@ -363,6 +369,62 @@ form input{
 .news-card{
     position: relative;
 }
+/* footer related style */
+.footer{
+    background: rgba(19, 19, 24, 0.05);
+    height: 502px;
+    width: 100%; 
+}
+footer h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+  }
+footer h2 .logo {
+    width: 48px;
+    height: 56.008px;
+  }
+footer h2 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 2.25rem;
+    font-weight: 800;
+  }
+footer h2 .nav-title {
+    color: #ff5400;
+    font-family: Mulish;
+    font-size: 2.25rem;
+    font-weight: 800;
+  }
+.footer-description{
+    color: #5A5A5D;
+    text-align: center;
+    font-weight: 400; 
+    width: 769px;
+    padding-left: 450px;
+    margin-top: 15px;
+    margin-bottom: 33px;
+}
+footer hr{
+    width: 1320px;
+    height: 1px;
+    margin-left: 150px;    
+}
+.footer-icon{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.rights{
+    text-align: center;
+    color: #131318;
+    font-family: Inter;
+    font-weight: 300;  
+}
+
+
 
 @media screen and (max-width: 576px) {
   nav {
@@ -379,7 +441,8 @@ form input{
   .banner {
     width: 335px;
     height: 483px;
-    margin: 18px;
+    margin-left: 35px;
+    margin-top: 17px;
     padding: 0px;
   }
   .banner-content p {
@@ -447,6 +510,7 @@ form input{
   }
   .tour-image img{
     width: 335px;
+    margin-left: 20px;
   }
 /* destination section */
 .Destination-section {
@@ -519,7 +583,7 @@ margin-left: 20px;
     height: 52px; 
 }
 .place-video iframe {
-    width: 335px;
+    width: 360px;
     height: 200px;
 }
 /* newsletter */
@@ -572,10 +636,29 @@ form button .btn-primary{
     padding-top: 10px;
 
 }
-
-
-
-
-
+/* footer */
+.footer{
+    height: 409px; 
+}
+.footer h2{
+    margin: 0;
+    padding-top: 33px;
+}
+.footer-description{
+    padding-left: 65px;
+    width: 287px;
+    font-size: 0.875rem; 
+}
+.footer hr{
+    width: 335px;
+    height: 1px; 
+    margin: 0px 20px;
+}
+.footer-icon{
+    padding-top: 15px;
+}
+.rights{
+    padding-top: 24px;
+}
 }
 

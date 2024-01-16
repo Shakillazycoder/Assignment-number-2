@@ -156,142 +156,74 @@ nav ul li .home {
   border-radius: 16px;
 }
 /* collage related style */
-.collage{
-    margin: 60px 135px;
-}
-.collage-title{
-    color: #131318;
+.Destination-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .Destination-title{
+    align-items: center;
     text-align: center;
+    color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 24px;
-}
-.collage-descriptin{
-    color: rgba(19, 19, 24, 0.70);
+    margin-bottom: 24px;   
+  }
+  .Destination-description{
+    color: rgba(19, 19, 24, 0.7);
     text-align: center;
+    width: 40%;
+    margin: 0 auto;
     font-weight: 400;
-    width: 643px;
-    padding-left: 300px;
-}
-.item-box{
-    margin: 60px 135px;
-}
-.card{
-    height: 300px;
+  }
+  .image-box{
+    margin-top: 48px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-bottom: 24px;
-}
-.item1{
-    background: url('../Images/Rectangle5.png');
-    background-repeat: no-repeat;
-    width: 573px;
-    height: 100%;
-    border-radius: 16px;
-    color: #FFF;
-    text-align: center;
-    align-items: center;
-    font-size: 1.75rem;
-    font-weight: 800;
-    padding-top: 132px
-}
-.item2{
-    background: url('../Images/Rectangle8.png');
-    background-repeat: no-repeat;
-    width: 573px;
-    height: 100%;
-    border-radius: 16px;
-    color: #FFF;
-    text-align: center;
-    align-items: center;
-    font-size: 1.75rem;
-    font-weight: 800;
-    padding-top: 132px
-}
-.item3{
-    background: url('../Images/Rectangle6.png');
-    background-repeat: no-repeat;
-    width: 374px;
-    height: 100%;
-    border-radius: 16px;
-    color: #FFF;
-    text-align: center;
-    align-items: center;
-    font-size: 1.75rem;
-    font-weight: 800;
-    padding-top: 125px;
-}
-.item4{
-    background: url('../Images/Rectangle7.png');
-    background-repeat: no-repeat;
-    width: 474px;
-    height: 100%;
-    border-radius: 16px;
-    color: #FFF;
-    text-align: center;
-    align-items: center;
-    font-size: 1.75rem;
-    font-weight: 800;
-    padding-top: 125px;
-}
-.item5{
-    background: url('../Images/Rectangle9.png');
-    background-repeat: no-repeat;
-    width: 274px;
-    height: 100%;
-    border-radius: 16px;
-    color: #FFF;
-    text-align: center;
-    align-items: center;
-    font-size: 1.75rem;
-    font-weight: 800;
-    padding-top: 125px;
-}
-.item6{
-    background: url('../Images/Rectangle11.png');
-    background-repeat: no-repeat;
-    width: 473px;
-    height: 100%;
-    border-radius: 16px;
-    color: #FFF;
-    text-align: center;
-    align-items: center;
-    font-size: 1.75rem;
-    font-weight: 800;
-    padding-top: 132px;
-}
-.item7{
-    background: url('../Images/Rectangle10.png');
-    background-repeat: no-repeat;
-    width: 673px;
-    height: 100%;
-    border-radius: 16px;
-    color: #FFF;
-    text-align: center;
-    align-items: center;
-    font-size: 1.75rem;
-    font-weight: 800;
-    padding-top: 132px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 24px 24px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Maldives Maldives Maldives Indonesia Indonesia Indonesia"
+      "Srilanka Srilanka North-America North-America Kashmir Kashmir"
+      "Bangladesh Bangladesh Bandarban Bandarban Bandarban Bandarban";
+  }
+  .image-box img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  .Maldives {
+    grid-area: Maldives;
+  }
+  
+  .Indonesia {
+    grid-area: Indonesia;
+  }
+  
+  .Srilanka {
+    grid-area: Srilanka;
+  }
+  
+  .North-America {
+    grid-area: North-America;
+  }
+  
+  .Kashmir {
+    grid-area: Kashmir;
+  }
+  
+  .Bangladesh {
+    grid-area: Bangladesh;
+  }
+  
+  .Bandarban {
+    grid-area: Bandarban;
+  }
 
 
 @media screen and (max-width: 576px) {
@@ -357,6 +289,7 @@ nav ul li .home {
     text-align: center;
     font-weight: 700;
   }
+  /* popular tour */
   .tour-container{
     flex-direction: column;
     margin: 20px;
@@ -376,5 +309,35 @@ nav ul li .home {
   }
   .tour-image img{
     width: 335px;
+  }
+/* destination section */
+.Destination-section {
+    width: 95%;
+    overflow: hidden;
+  }
+  .Destination-title{
+    font-size: 1.2rem;
+  }
+  .Destination-description {
+    width: 70%;
+    font-size: 0.825rem;
+    margin-bottom: 24px;
+  }
+  .image-box {
+    margin: 0 auto;
+    gap: 16px 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "Maldives"
+      "Indonesia"
+      "Srilanka"
+      "North-America"
+      "Kashmir"
+      "Bangladesh"
+      "Bandarban";
+  }
+  .image-box img {
+    width: 95%;
   }
 }

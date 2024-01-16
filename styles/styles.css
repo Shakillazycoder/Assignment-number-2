@@ -294,9 +294,75 @@ nav ul li .home {
     margin-bottom: 32px;
 }
 /* newsletter */
-
-
-
+.news-section{
+    display: flex;
+    margin: 100px 135px;
+    gap: 200px;
+}
+.newsletter{
+    width: 474px;
+    height: 422px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;    
+}
+.news-title{
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-left: 40px; 
+    padding-top: 40px;
+    margin-bottom: 16px;
+}
+.news-description{
+    color: #5A5A5D;
+    font-weight: 400;
+    width: 350px; 
+    padding-left: 40px;
+    margin-bottom: 24px;  
+}
+hr{
+    width: 393px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10); 
+    margin-left: 40px;
+    margin-bottom: 24px;   
+}
+form{
+    padding-left: 40px;
+}
+form input{
+    width: 393px;
+    height: 52px;
+    color: rgba(19, 19, 24, 0.30);
+    font-weight: 400;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    margin-bottom: 16px;   
+    padding-left: 16px;
+}
+.news-card img{
+    width: 672px;
+    height: 422px;
+    border-radius: 16px;  
+}
+.news-text{
+    width: 300px;
+    height: 75px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;    
+    text-align: center;
+    padding-top: 25px;
+    position: absolute;
+    color: #fff;
+    right: 0;
+    margin-top: -175px;
+    margin-right: 20px;
+}
+.news-card{
+    position: relative;
+}
 
 @media screen and (max-width: 576px) {
   nav {
@@ -338,7 +404,7 @@ nav ul li .home {
   .banner-form {
     display: flex;
     width: 287px;
-    padding: 16px;
+    padding: 0px 10px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -456,6 +522,57 @@ margin-left: 20px;
     width: 335px;
     height: 200px;
 }
+/* newsletter */
+.news-section{
+    flex-direction: column;
+    margin: 0;
+    gap: 20px;
+    padding: 20px;
+}
+.newsletter{
+    width: 335px;
+    height: 353px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;  
+    padding-right: 20px;
+}
+.news-title{
+    color: #131318;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding-top: 20px;
+}
+.news-description{
+    width: 270px; 
+}
+hr{
+    width: 288px;
+    height: 1px;    
+}
+form input{
+    width: 288px;
+    height: 52px;
+    padding-left: 0;       
+}
+
+.news-discount img{
+    width: 355px;
+    height: 300px;
+    border-radius: 16px; 
+}
+form button .btn-primary{
+    width: 288px;
+    height: 52px; 
+}
+.news-text{
+    margin-top: -125px;
+    width: 214.023px;
+    height: 59.268px; 
+    margin-right: 35px;
+    padding-top: 10px;
+
+}
+
 
 
 

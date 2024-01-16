@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
 
-* {
+* body{
   margin: 0;
   padding: 0;
   font-family: "Mulish", sans-serif;
 }
+
 .btn-primary {
   width: 174px;
   height: 32px;
@@ -74,7 +75,7 @@ nav ul li .home {
 .banner {
   text-align: center;
   width: 80%;
-  height: 300px;
+  height: 400px;
   flex-shrink: 0;
   border-radius: 16px;
   background: linear-gradient(
@@ -87,7 +88,7 @@ nav ul li .home {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px 165px;
-  padding-top: 106px;
+  padding-top: 20px;
 }
 .banner-content h2 {
   color: #fff;
@@ -241,7 +242,7 @@ nav ul li .home {
     text-align: center;
     font-weight: 400; 
     width: 643px;
-    padding: 10px 620px;
+    padding: 10px 435px;
     margin-bottom: 48px;
 }
 .hotels{
@@ -276,6 +277,7 @@ nav ul li .home {
 .perfect-place{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 60px;
     margin: 100px 205px;
 }
@@ -284,19 +286,19 @@ nav ul li .home {
     font-size: 2.5rem;
     font-weight: 800;
     width: 448px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 .place-description{
     color: #5A5A5D;
     font-weight: 400;
     width: 532px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 .place-content ul li{
     color: #131318;
     font-weight: 700;
     width: 518px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 /* newsletter */
 .news-section{
@@ -359,7 +361,8 @@ form input{
     border-radius: 16px;
     background: #FF5400;    
     text-align: center;
-    padding-top: 25px;
+    padding-top: 15px;
+    line-height: 0;
     position: absolute;
     color: #fff;
     right: 0;
@@ -369,6 +372,38 @@ form input{
 .news-card{
     position: relative;
 }
+/* blog related style */
+.news-title h2{
+    color: #131318;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-left: 40px; 
+    padding-top: 40px;
+    margin-bottom: 16px;
+}
+.news-title p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-weight: 400; 
+    width: 643px;
+    padding: 10px 435px;
+    margin-bottom: 48px;
+}
+.blog-img{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 135px;
+    padding-left: 25px;
+}
+.blog-img img{
+    width: 350px;
+    height: 300px;
+}
+.blog-img p{
+    width: 335px;
+}
+
 /* footer related style */
 .footer{
     background: rgba(19, 19, 24, 0.05);
@@ -402,7 +437,7 @@ footer h2 .nav-title {
     text-align: center;
     font-weight: 400; 
     width: 769px;
-    padding-left: 450px;
+    padding-left: 399px;
     margin-top: 15px;
     margin-bottom: 33px;
 }
@@ -433,7 +468,7 @@ footer hr{
   }
   nav ul {
     flex-direction: column;
-    padding-right: 25px;
+    padding-right: 70px;
   }
   nav li {
     margin-bottom: 0px;
@@ -467,13 +502,13 @@ footer hr{
   .banner-form {
     display: flex;
     width: 287px;
-    padding: 0px 10px;
+    padding: 15px 20px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.3);
-    margin: 0px 10px;
+    margin: 0px 5px;
   }
   .banner-form input {
     width: 255px;
@@ -595,7 +630,7 @@ margin-left: 20px;
 }
 .newsletter{
     width: 335px;
-    height: 353px;
+    height: 363px;
     border-radius: 16px;
     border: 1px solid #FF5400;  
     padding-right: 20px;
@@ -633,19 +668,40 @@ form button .btn-primary{
     width: 214.023px;
     height: 59.268px; 
     margin-right: 35px;
-    padding-top: 10px;
+    padding-top: 0px;
+    line-height: 0;
 
 }
+/* blog section */
+.news-title h2{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.news-title p{
+    padding: 0;
+    width: 287px;
+    font-size: 0.875rem; 
+    text-align: left;
+}
+.blog-img{
+    flex-direction: column;
+    margin: 0;
+    gap: 20px;
+    
+}
+
 /* footer */
 .footer{
-    height: 409px; 
+    height: 409px;
+    margin-top: 20px; 
 }
 .footer h2{
     margin: 0;
     padding-top: 33px;
 }
 .footer-description{
-    padding-left: 65px;
+    padding-left: 40px;
     width: 287px;
     font-size: 0.875rem; 
 }

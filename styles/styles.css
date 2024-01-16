@@ -224,6 +224,78 @@ nav ul li .home {
   .Bandarban {
     grid-area: Bandarban;
   }
+/* Why Choose Us */
+.Categorey-title{
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800; 
+    margin-top: 100px;
+}
+.Categorey-description{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-weight: 400; 
+    width: 643px;
+    padding: 10px 450px;
+    margin-bottom: 48px;
+}
+.hotels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 135px;
+    gap: 24px 24px;
+}
+.Handpicked-Hotels, .Guarantee{
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding-left: 32px; 
+    padding-top: 32px;    
+}
+.Service{
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05); 
+    padding-left: 32px;
+    padding-top: 32px;
+}
+.Guarantee{
+    margin: 24px 435px;
+}
+/* perfect place */
+.perfect-place{
+    display: flex;
+    gap: 200px;
+    margin: 100px 135px;
+}
+.place-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: 448px;
+    margin-bottom: 24px;
+}
+.place-description{
+    color: #5A5A5D;
+    font-weight: 400;
+    width: 532px;
+    margin-bottom: 24px;
+}
+.place-content ul li{
+    color: #131318;
+    font-weight: 700;
+    width: 518px;
+    margin-bottom: 32px;
+}
+/* newsletter */
+
+
 
 
 @media screen and (max-width: 576px) {
@@ -340,4 +412,53 @@ nav ul li .home {
   .image-box img {
     width: 95%;
   }
+/* Why Choose Us */
+.hotels{
+flex-direction: column;
 }
+.Categorey-description{
+    padding-left: 50px;
+    padding-right: 0;
+    width: 309px;
+
+}
+.Guarantee{
+margin-left: 20px;
+
+}
+.Handpicked-Hotels, .Service, .Guarantee{
+    width: 335px;
+    height: 289px;
+}
+/* perfect place */
+.perfect-place{
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
+.place-title{
+    width: 248px; 
+    font-size: 1.2rem;
+}
+.place-description{
+    width: 335px;
+    font-size: 0.875rem;
+}
+.perfect-place ul li{
+    width: 335px;
+    font-size: 0.875rem;
+}
+.perfect-place .btn-primary{
+    width: 174px;
+    height: 52px; 
+}
+.place-video iframe {
+    width: 335px;
+    height: 200px;
+}
+
+
+
+
+}
+
